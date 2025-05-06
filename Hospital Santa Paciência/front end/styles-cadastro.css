@@ -1,0 +1,126 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #284ea7;
+}
+
+.logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.container {
+    background: aliceblue;
+    padding: 40px 20px;
+    border-radius: 12px; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); 
+    width: 320px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #284ea7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px; 
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input {
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: darkblue;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border: 2px solid; 
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #284ea7;
+}
+
+.link-pacientes {
+    margin-top: 25px;
+    text-decoration: none;
+    color: darkblue;
+    font-size: 14px;
+}
+
+.link-pacientes:hover {
+    text-decoration: none;
+    color: #284ea7;
+}
+  
+
+.mensagem {
+    position: fixed;
+    top: 20px;
+    right: -300px;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    cursor: pointer;
+    max-width: 300px;
+    z-index: 1000;
+}
+
+.mensagem.sucesso {
+    background-color: #28a745;
+    color: white !important;
+}
+
+.mensagem.erro {
+    background-color: darkred !important;
+    color: white !important;
+}
+
+.mensagem.visivel {
+    right: 20px;
+    opacity: 1;
+}
+
+.oculto {
+    display: none;
+}
