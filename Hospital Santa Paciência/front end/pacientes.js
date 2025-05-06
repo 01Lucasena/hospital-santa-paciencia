@@ -17,7 +17,7 @@ function carregarPacientes() {
             return;
         }
 
-        paciente.forEach(paciente => {
+        pacientes.forEach(paciente => {
             const item = document.createElement('li')
             item.innerHTML = `<strong>Nome:</strong> ${paciente.nome}<br>
                             <strong>E-mail:</strong> ${paciente.email}`
